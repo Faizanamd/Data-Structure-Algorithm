@@ -14,6 +14,7 @@ public class InsertionSortRecursive {
         int key = arr[i];
         int j = i;
         while (j > 0 && arr[j - 1] > key) {
+           System.out.println(i+" -> "+j+" :"); print(arr);
             arr[j] = arr[j - 1];
             j--;
         }
@@ -27,7 +28,7 @@ public class InsertionSortRecursive {
     public static void main(String[] args) {
         int[] arr = { 4, 5, 2, 0, 9, 3 };
         sort(arr, 0, arr.length);
-        print(arr);
+        // print(arr);
 
     }
 
